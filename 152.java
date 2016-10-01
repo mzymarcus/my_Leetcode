@@ -24,7 +24,10 @@ public class Solution {
     }
 }
 
-//nice version
+// nice version
+// the basic idea is to use dynamic programming;
+// each time we return a max_local, min_local containing the last element; 
+// so each time, the new max_local, min_local will only come from the new element itself, or the product of the new element of previous max_local and previous min_local; 
 public class Solution {
     public int maxProduct(int[] nums) {
         if(nums.length == 1){
